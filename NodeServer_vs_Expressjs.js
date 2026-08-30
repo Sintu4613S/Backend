@@ -3,7 +3,10 @@ import express from 'express';
 
 const server = express();
 
-server.get('',(req,res)=>{
+server.get('/about',(req,res)=>{
+  res.send("About page")
+}
+server.get('/',(req,res)=>{
  res.send([
    {
      name:'Sintu Kumar',
